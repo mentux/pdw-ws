@@ -11,8 +11,13 @@ $server = new SoapServer(null, array('uri' => Constants::URL_LOCAL_SOAP));
 			return 'Hello World '.$name.'!';
 	  }
 
+		function soma($a, $b) {
+			return "Soma de $a e $b";
+	  }
+
 //registro do servico na instania
 $server->addFunction("helloWorld");
+$server->addFunction("soma");
 
 // chamada do metodo para atender as requisicoes do servico
 // se a chamada for um POST executa o método, caso contrario, apenas mostra a lista das funcoes disponiveis

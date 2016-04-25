@@ -4,8 +4,8 @@
 include_once('../Constants.php');
 // configurando o objeto executor cliente com o endereco do servidor
 $client = new SoapClient(null, array(
-	'location' => Constants::URL_LOCAL_SOAP_SERVER,  // ex.: http://localhost/soap/server.php
-	'uri' => Constants::URL_LOCAL_SOAP,  				// ex.: http://localhost/soap/
+	'location' => "http://localhost/pdw/pdw-ws/webservice01/soap/server.php",  // ex.: http://localhost/soap/server.php
+	'uri' => "http://localhost/pdw/pdw-ws/webservice01/soap/",  				// ex.: http://localhost/soap/
 	'trace' => 1));
 
 // chamada do servico SOAP
