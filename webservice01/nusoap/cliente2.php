@@ -4,9 +4,10 @@
 // Baixar o arquivo nusoap.php
 
 require_once('lib/nusoap.php');
+include_once('../Constants.php');
 
 // Definicao da localizacao do arquivo WSDL
-$wsdl = 'http://127.0.0.1:8081/webservice01/nusoap/server2.php?wsdl'; // ex.: http://localhost/nusoap/server2.php?wsdl
+$wsdl = Constants::URL_LOCAL_NUSOAP_WSDL; // ex.: http://localhost/nusoap/server2.php?wsdl
 
 // criacao de uma instancia do cliente
 $client = new soapclient($wsdl, true);
