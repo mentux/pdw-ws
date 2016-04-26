@@ -14,7 +14,8 @@ try {
 }
 
 // chamada do m�todo SOAP
-$result = $client->call('helloWorld', array('Tormen'));
+$result = $client->call('helloWorld', array('Tormen Juca'));
+//var_dump($result);
 // exibe o resultado
 print_r($result);
 
@@ -27,3 +28,5 @@ echo '<pre>'.htmlspecialchars($client->response).'</pre>';
 // Exibe mensagens para debug
 echo '<h2>Debug</h2>';
 echo '<pre>'.htmlspecialchars($client->debug_str).'</pre>';
+/**/
+?>
